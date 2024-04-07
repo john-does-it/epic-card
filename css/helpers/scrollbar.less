@@ -1,0 +1,16 @@
+// custom scrollbar for webkit compatible navigators
+::-webkit-scrollbar {
+  width: .75rem; // v scrollbar
+  height: .75rem; // h scrollbar
+  background: @darkerwhite;
+}
+
+::-webkit-scrollbar-thumb {
+  width: inherit;
+  background: @black;
+  
+  &:active,
+  &:hover {
+    background: @green;
+  }
+}

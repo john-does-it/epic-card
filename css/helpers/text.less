@@ -1,0 +1,120 @@
+._text {
+  &.-center {
+    text-align: center;
+  }
+
+  &.-right {
+    text-align: right;
+  }
+
+  &.-left {
+    text-align: left;
+  }
+
+  &.-justify {
+    text-align: justify;
+  }
+
+  &.-ultralight {
+    font-weight: 200;
+  }
+
+  &.-regular {
+    font-weight: 400;
+  }
+
+  &.-bold {
+    font-weight: 700;
+  }
+
+  &.-xxs {
+    font-size: @size-xxs;
+  }
+
+  &.-xs {
+    font-size: @size-xs;
+  }
+
+  &.-s {
+    font-size: @size-s;
+  }
+
+  &.-m {
+    font-size: calc(@size-s + 2px);
+
+    @media (min-width: @xxs) {
+      font-size: calc(@size-s + @size-1);
+    }
+
+    @media (min-width: @l) {
+      font-size: @size-m;
+    }
+  }
+
+  &.-l {
+    font-size: calc(@size-s + 3px);
+
+    @media (min-width: @xxs) {
+      font-size: calc(@size-m + @size-1-5);
+    }
+
+    @media (min-width: @l) {
+      font-size: @size-l;
+    }
+  }
+
+  &.-xl {
+    font-size: calc(@size-s + 4px);
+
+    @media (min-width: @xxs) {
+      font-size: calc(@size-m + @size-2);
+    }
+    
+    @media (min-width: @l) {
+      font-size: @size-xl;
+    }
+  }
+
+  &.-xxl {
+    font-size: calc(@size-s + 12px);
+
+    @media (min-width: @xxs) {
+      font-size: calc(@size-xl + @size-3);
+    }
+    
+    @media (min-width: @l) {
+      font-size: @size-xxl;
+    }
+  }
+
+  &.-capitalize {
+    text-transform: capitalize;
+  }
+
+  &.-uppercase {
+    text-transform: uppercase;
+  }
+
+  &.-italic {
+    font-style: italic;
+  }
+  
+  &.-truncate {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &.-antiqueolive {
+    font-family: 'Antique Olive Std Black', Helvetica Bold, Arial;
+    letter-spacing: -2px;
+
+    &.-nospacing {
+      letter-spacing: 0;
+    }
+  }
+
+  &.-helvetica {
+    font-family: 'Helvetica 55 Roman', Helvetica, sans-serif;
+  }
+}
