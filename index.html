@@ -10,14 +10,6 @@
 <body class="layout-example">
   <section class="product-container _color -bgwhite" id="product-container">
     <div class="card-container _flex -column _position -relative _margin -auto -mt11 _color -bgdarkblue" id="card-container">
-      <!-- 
-        <div class="rounded-container _position -absolute">
-          <div class="round -one -active _color -bglightblue _position -absolute"></div>
-          <div class="round -two -transition _color -bgdarkblue _position -absolute"></div>
-          <div class="round -three _color -bglightblue _position -absolute"></div>
-          <div class="round -four _color -bgdarkblue _position -absolute"></div>
-        </div>
-      -->
       <div class="effect-container">
         <div class="transition-container _position -absolute -active">
           <div class="round _position -absolute"></div>
@@ -44,21 +36,22 @@
           </div>
         </div>
         <div class="picturesandarrows-container _flex -column">
-          <picture srcset="img/#.webp">
+          <picture srcset="img/#.webp" data-role="slide">
             <img class="picture -active _padding -pb4" src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
           </picture>
-          <picture srcset="img/#.webp">
+          <picture srcset="img/#.webp" data-role="slide">
             <img class="picture _padding -pb4" src="img/products/baltsar-chair-black.png" alt="Picture of the black Baltasar chair">
           </picture>
-          <div class="slider-container _flex" data-role="slider-container">
+          <picture srcset="img/#.webp" data-role="slide">
+            <img class="picture _padding -pb4" src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
+          </picture>
+          <div class="switch-container _flex" data-role="switch-container">
             <div class="number-container">
-              <!-- 
               <button class="slide-container -left" type="button">
-                <picture srcset="img/#.webp">
+                <picture srcset="img/#.webp" id="previous-slide">
                   <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
                 </picture>
               </button>
-               -->
               <span class="currentslide _color -white">1 of 4</span> 
               <button class="slide-container -right -active" type="button">
                 <picture srcset="img/#.webp" id="next-slide">

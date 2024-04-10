@@ -320,8 +320,8 @@ label {
   background-color: hsl(204, 100%, 49%);
   border-radius: 100%;
   z-index: 2;
-  -webkit-animation: slideIn 1s ease-in forwards;
-          animation: slideIn 1s ease-in forwards;
+  -webkit-animation: slideIn 1s ease-in-out forwards;
+          animation: slideIn 1s ease-in-out forwards;
 }
 .card-container .transition-container .fillingcolor {
   width: 100%;
@@ -330,8 +330,8 @@ label {
   bottom: 0;
   background-color: hsl(204, 100%, 29%);
   z-index: 1;
-  -webkit-animation: slideInSlightly 0.5s ease-in forwards;
-          animation: slideInSlightly 0.5s ease-in forwards;
+  -webkit-animation: fillingColor 0.5s linear forwards;
+          animation: fillingColor 0.5s linear forwards;
   border-radius: 0 100% 0 0;
 }
 .card-container .transition-container.-two .round {
@@ -412,24 +412,28 @@ label {
     opacity: 1;
   }
 }
-@-webkit-keyframes slideInSlightly {
+@-webkit-keyframes fillingColor {
   from {
-    -webkit-transform: translate(-400px, 1000px);
-            transform: translate(-400px, 1000px);
+    -webkit-transform: translate(-400px, 400px);
+            transform: translate(-400px, 400px);
+    border-radius: 0 100% 0 0;
   }
   to {
     -webkit-transform: translate(0);
             transform: translate(0);
+    border-radius: 0;
   }
 }
-@keyframes slideInSlightly {
+@keyframes fillingColor {
   from {
-    -webkit-transform: translate(-400px, 1000px);
-            transform: translate(-400px, 1000px);
+    -webkit-transform: translate(-400px, 400px);
+            transform: translate(-400px, 400px);
+    border-radius: 0 100% 0 0;
   }
   to {
     -webkit-transform: translate(0);
             transform: translate(0);
+    border-radius: 0;
   }
 }
 @-webkit-keyframes slideIn {

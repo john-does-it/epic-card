@@ -35,7 +35,7 @@
       background-color: @lightblue;
       border-radius: 100%;
       z-index: 2;
-      animation: slideIn 1s ease-in forwards;
+      animation: slideIn 1s ease-in-out forwards;
     }
     
     .fillingcolor {
@@ -45,7 +45,7 @@
       bottom: 0;
       background-color: @darkblue;
       z-index: 1;
-      animation: slideInSlightly .5s ease-in forwards;
+      animation: fillingColor .5s linear forwards;
       border-radius: 0 100% 0 0;
     }
     
