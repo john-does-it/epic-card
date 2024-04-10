@@ -23,6 +23,15 @@ a {
   cursor: pointer;
 }
 
+button {
+  all: unset; // reset button appearance
+  outline: revert; // preserve keyboard accessibility  
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 img, picture {
   max-width: 100%;
   height: auto;

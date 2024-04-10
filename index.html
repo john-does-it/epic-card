@@ -4,39 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>One EPIC card for EPIC job appliance</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-  <section id="card-transition-container">
-    <div class="card-container _flex -wrap _position -relative">
-      <div class="rounded-container _position -absolute">
-        <!-- rounded effect -->
-        <div class="round -one -active"></div>
-        <div class="round -two"></div>
-      </div>
-      <div class="card-subcontainer">
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore quia modi a hic, magnam recusandae quasi corrupti.</p>
-        <div class="priceandcta-container _flex -row -wrap">
-          <div>999,99€</div>
-          <button type="button">Buy now</button>
+<body class="layout-example">
+  <section class="product-container _color -bgwhite" id="product-container">
+    <div class="card-container _flex -column _position -relative _margin -auto -mt11 _color -bgdarkblue" id="card-container">
+      <!-- 
+        <div class="rounded-container _position -absolute">
+          <div class="round -one -active _color -bglightblue _position -absolute"></div>
+          <div class="round -two -transition _color -bgdarkblue _position -absolute"></div>
+          <div class="round -three _color -bglightblue _position -absolute"></div>
+          <div class="round -four _color -bgdarkblue _position -absolute"></div>
+        </div>
+      -->
+      <div class="effect-container">
+        <div class="transition-container _position -absolute -active">
+          <div class="round _position -absolute"></div>
+          <div class="fillingcolor _position -absolute"></div>
+        </div>
+        <div class="transition-container -two _position -absolute">
+          <div class="round _position -absolute"></div>
+          <div class="fillingcolor _position -absolute"></div>
+        </div>
+        <div class="transition-container -three _position -absolute">
+          <div class="round _position -absolute"></div>
+          <div class="fillingcolor _position -absolute"></div>
         </div>
       </div>
-      <div class="card-subcontainer">
-        <div class="slider-container">
-          <picture srcset="img/#.webp">
-            <img class="picture -active" src="img/#.png" alt="Picture of the white Baltasar chair">
-          </picture>
-          <picture srcset="img/#.webp">
-            <img class="picture" src="img/#.png" alt="Picture of the black Baltasar chair">
-          </picture>
-        </div>
-        <div class="arrow-container _flex">
-          <div class="number-container">
-            <span class="currentslide">1</span> of 2</div> 
+      <div class="content-container _flex -justifyspacebetween -aligncenter _margin -auto">
+        <div class="content-subcontainer _flex -column _padding -pb9">
+          <div class="text-container -active _padding -pb9">
+            <h2 class="_text -xxl -bold _padding -pb9 _color -white">Balthasar</h2>
+            <p class="_color -white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore quia modi a hic, magnam recusandae quasi corrupti.</p>
           </div>
+          <div class="priceandcta-container _flex -row -wrap -aligncenter">
+            <span class="_text -l -bold _color -white">99,99€</span>
+            <button class="button _color -bgyellow -black" type="button" id="buy-button">Buy now</button>
+          </div>
+        </div>
+        <div class="picturesandarrows-container _flex -column">
           <picture srcset="img/#.webp">
-            <img class="icon" src="img/#.png" alt="Arrow for the slider">
+            <img class="picture -active" src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
           </picture>
+          <picture srcset="img/#.webp">
+            <img class="picture" src="img/products/baltsar-chair-black.png" alt="Picture of the black Baltasar chair">
+          </picture>
+          <div class="slider-container _flex" data-role="slider-container">
+            <div class="number-container">
+              <!-- 
+              <button class="slide-container -left" type="button">
+                <picture srcset="img/#.webp">
+                  <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
+                </picture>
+              </button>
+               -->
+              <span class="currentslide _color -white">1 of 4</span> 
+              <button class="slide-container -right -active" type="button">
+                <picture srcset="img/#.webp" id="next-slide">
+                  <img class="icon" src="img/icons/arrow-right.png" alt="Arrow right for the product slider">
+                </picture>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
