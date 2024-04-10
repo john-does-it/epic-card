@@ -151,6 +151,9 @@ template {
 :before {
   box-sizing: border-box;
 }
+html {
+  font-family: "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif !important;
+}
 body {
   margin: auto;
 }
@@ -287,8 +290,9 @@ label {
 .card-container {
   background-color: hsl(0, 0%, 100%);
   max-width: 1280px;
-  padding: 3.5rem 10%;
+  padding: 3.5rem 5%;
   border-radius: 0.375rem;
+  border: 2px solid hsl(0, 0%, 31%);
   overflow: hidden;
 }
 .card-container *:not(.round) {
@@ -309,10 +313,10 @@ label {
   display: block;
 }
 .card-container .transition-container .round {
-  width: 640px;
-  height: 840px;
-  right: -320px;
-  top: -320px;
+  width: 1080px;
+  height: 1080px;
+  right: -420px;
+  top: -560px;
   background-color: hsl(204, 100%, 49%);
   border-radius: 100%;
   z-index: 2;
@@ -351,7 +355,13 @@ label {
     flex-flow: row;
   }
 }
+.card-container h2 {
+  font-family: "IKEASans-Heavy";
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 .card-container .priceandcta-container {
+  max-width: 320px;
   gap: 10%;
   justify-content: space-between;
 }
@@ -363,13 +373,19 @@ label {
 }
 .card-container .slider-container {
   gap: 1rem;
+  justify-content: center;
+}
+@media (min-width: 960px) {
+  .card-container .slider-container {
+    justify-content: flex-start;
+  }
 }
 .product-container .content-subcontainer {
-  max-width: 480px;
+  max-width: 640px;
 }
 @media (min-width: 960px) {
   .product-container .content-subcontainer {
-    max-width: 320px;
+    max-width: 480px;
   }
 }
 .layout-example .product-container {
