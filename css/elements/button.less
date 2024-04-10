@@ -1,14 +1,20 @@
 .button {
-  height: 40px;
+  height: 42px;
+  font-size: 14px;
   font-family: "IKEA Sans Heavy";
-  padding: 0 10%;
   text-transform: uppercase;
   font-weight: bold;
   background-color: @yellow;
   color: @black;
   border-radius: @size-7;
+  border: 2px solid  transparent;
+  padding: 0 10%;
+  transition: box-shadow .5s;
+  box-sizing: border-box;
 
   &:hover {
-    background-color: @white;
+    color: @white;
+    box-shadow: inset 10em 0 0 0 @blue; // see https://codepen.io/giana/pen/BZaGyP
+    border: 2px solid  @yellow;
   }
 }

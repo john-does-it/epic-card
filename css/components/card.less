@@ -32,7 +32,7 @@
       height: 1080px;
       right: -420px;
       top: -560px;
-      background-color: @lightblue;
+      background-color: @blue;
       border-radius: 100%;
       z-index: 2;
       animation: slideIn 1s ease-in-out forwards;
@@ -43,7 +43,7 @@
       height: 100%;
       left: 0;
       bottom: 0;
-      background-color: @darkblue;
+      background-color: @lightblue;
       z-index: 1;
       animation: fillingColor .5s linear forwards;
       border-radius: 0 100% 0 0;
@@ -51,7 +51,7 @@
     
     &.-two {
       .round {
-        background-color: @darkyellow;
+        background-color: @white;
       }
       
       .fillingcolor {
@@ -61,18 +61,18 @@
     
     &.-three {
       .round {
-        background-color: @orange;
+        background-color: @blue;
       }
       
       .fillingcolor {
-        background-color: @lightblue;
+        background-color: @darkblue;
       }
     }
   }
   
   .content-container {
     width: 100%;
-    flex-flow: column;
+    flex-flow: column-reverse;
     
     @media (min-width: @m) {
       flex-flow: row;
