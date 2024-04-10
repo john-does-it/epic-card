@@ -45,25 +45,21 @@
           <picture class="picture _padding -pb4" srcset="img/#.webp" data-role="slide">
             <img src="img/products/baltsar-chair-black.png" alt="Picture of the black Baltasar chair">
           </picture>
-          <div class="switch-container _flex -aligncenter _text -l" data-role="switch-container">
-            <button class="slide-container -left" type="button">
-              <picture srcset="img/#.webp" id="previous-slide">
-                <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
-              </picture>
-            </button>
-            <span class="currentslide _color -white"><span class="slidenumber">1</span> of 3</span> 
-            <button class="slide-container -right" type="button">
-              <div class="_flex -aligncenter" id="next-slide">
-                <span class="wavyline _flex"></span>
-                <span class="arrowright"></span>
-              </div>
-
-              <!-- 
+          <div class="switch-container _flex" data-role="switch-container">
+            <div class="number-container">
+              <button class="slide-container -left" type="button">
+                <picture srcset="img/#.webp" id="previous-slide">
+                  <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
+                </picture>
+              </button>
+              <span class="currentslide _color -white"><span class="slidenumber">1</span> of 3</span> 
+              <button class="slide-container -right" type="button">
+                <span id="next-slide"></span> 
                 <picture srcset="img/#.webp" id="next-slide">
                   <img class="icon" src="img/icons/arrow-right.png" alt="Arrow right for the product slider">
                 </picture>
-              -->
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>

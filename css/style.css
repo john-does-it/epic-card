@@ -287,15 +287,6 @@ label {
   text-transform: uppercase;
   font-weight: bold;
 }
-.wavyline::before {
-  content: 'aaaaaaaaaaaaa';
-  color: transparent;
-  text-decoration: underline;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
-  -webkit-text-decoration-color: hsl(0, 0%, 100%);
-          text-decoration-color: hsl(0, 0%, 100%);
-}
 .card-container {
   background-color: hsl(0, 0%, 100%);
   max-width: 1280px;
@@ -397,29 +388,6 @@ label {
     justify-content: flex-start;
   }
 }
-.card-container .slide-container .wavyline {
-  width: 50px;
-  height: 40px;
-  overflow: hidden;
-  position: relative;
-}
-.card-container .slide-container .wavyline::before {
-  position: absolute;
-  width: 50px;
-  left: -5px;
-  top: -13px;
-}
-.card-container .slide-container .wavyline:hover::before {
-  -webkit-animation: wavyLine 1s linear infinite;
-          animation: wavyLine 1s linear infinite;
-}
-.card-container .slide-container .arrowright {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid hsl(0, 0%, 100%);
-}
 .layout-example .product-container {
   width: 100%;
 }
@@ -442,26 +410,6 @@ label {
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes wavyLine {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
-}
-@keyframes wavyLine {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  to {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
   }
 }
 @-webkit-keyframes fillingColor {
