@@ -287,6 +287,15 @@ label {
   text-transform: uppercase;
   font-weight: bold;
 }
+.wavyline::before {
+  content: 'aaaaaaaaaaaaa';
+  color: transparent;
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: hsl(0, 0%, 100%);
+          text-decoration-color: hsl(0, 0%, 100%);
+}
 .card-container {
   background-color: hsl(0, 0%, 100%);
   max-width: 1280px;
@@ -355,6 +364,14 @@ label {
     flex-flow: row;
   }
 }
+.card-container .content-subcontainer {
+  max-width: 640px;
+}
+@media (min-width: 960px) {
+  .card-container .content-subcontainer {
+    max-width: 480px;
+  }
+}
 .card-container h2 {
   font-family: "IKEASans-Heavy";
   text-transform: uppercase;
@@ -371,22 +388,37 @@ label {
 .card-container .picture.-active {
   display: flex;
 }
-.card-container .slider-container {
+.card-container .switch-container {
   gap: 1rem;
   justify-content: center;
 }
 @media (min-width: 960px) {
-  .card-container .slider-container {
+  .card-container .switch-container {
     justify-content: flex-start;
   }
 }
-.product-container .content-subcontainer {
-  max-width: 640px;
+.card-container .slide-container .wavyline {
+  width: 50px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
 }
-@media (min-width: 960px) {
-  .product-container .content-subcontainer {
-    max-width: 480px;
-  }
+.card-container .slide-container .wavyline::before {
+  position: absolute;
+  width: 50px;
+  left: -5px;
+  top: -13px;
+}
+.card-container .slide-container .wavyline:hover::before {
+  -webkit-animation: wavyLine 1s linear infinite;
+          animation: wavyLine 1s linear infinite;
+}
+.card-container .slide-container .arrowright {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid hsl(0, 0%, 100%);
 }
 .layout-example .product-container {
   width: 100%;
@@ -410,6 +442,26 @@ label {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes wavyLine {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+@keyframes wavyLine {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
 }
 @-webkit-keyframes fillingColor {
@@ -1008,19 +1060,6 @@ label {
 @media (min-width: 1024px) {
   ._text.-xl {
     font-size: 3em;
-  }
-}
-._text.-xxl {
-  font-size: calc(1em + 12px);
-}
-@media (min-width: 320px) {
-  ._text.-xxl {
-    font-size: calc(3em + 0.75rem);
-  }
-}
-@media (min-width: 1024px) {
-  ._text.-xxl {
-    font-size: 4em;
   }
 }
 ._text.-capitalize {

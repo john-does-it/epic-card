@@ -27,38 +27,43 @@
       <div class="content-container _flex -justifyspacebetween -aligncenter _margin -auto">
         <div class="content-subcontainer _flex -column _padding -pb9">
           <div class="text-container -active _padding -pb9">
-            <h2 class="_text -xxl -bold _padding -pb9 _color -white">Balthasar</h2>
+            <h2 class="_text -xl -bold _padding -pb9 _color -white">Balthasar</h2>
             <p class="_color -white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore quia modi a hic, magnam recusandae quasi corrupti.</p>
           </div>
           <div class="priceandcta-container _flex -row -wrap -aligncenter">
             <span class="_text -l -bold _color -white">199,99€</span>
-            <button class="button _color -bgyellow -black" type="button" id="buy-button">Buy now</button>
+            <button class="button _color -bgyellow -black" type="button">Buy now</button>
           </div>
         </div>
         <div class="picturesandarrows-container _flex -column">
-          <picture srcset="img/#.webp" data-role="slide">
-            <img class="picture -active _padding -pb4" src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
+          <picture class="picture -active _padding -pb4" srcset="img/#.webp" data-role="slide">
+            <img src="img/products/baltasar-chair-yellow.png" alt="Picture of the white Baltasar chair">
           </picture>
-          <picture srcset="img/#.webp" data-role="slide">
-            <img class="picture _padding -pb4" src="img/products/baltsar-chair-black.png" alt="Picture of the black Baltasar chair">
+          <picture class="picture _padding -pb4" srcset="img/#.webp" data-role="slide">
+            <img src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
           </picture>
-          <picture srcset="img/#.webp" data-role="slide">
-            <img class="picture _padding -pb4" src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
+          <picture class="picture _padding -pb4" srcset="img/#.webp" data-role="slide">
+            <img src="img/products/baltsar-chair-black.png" alt="Picture of the black Baltasar chair">
           </picture>
-          <div class="switch-container _flex" data-role="switch-container">
-            <div class="number-container">
-              <button class="slide-container -left" type="button">
-                <picture srcset="img/#.webp" id="previous-slide">
-                  <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
-                </picture>
-              </button>
-              <span class="currentslide _color -white">1 of 4</span> 
-              <button class="slide-container -right -active" type="button">
+          <div class="switch-container _flex -aligncenter _text -l" data-role="switch-container">
+            <button class="slide-container -left" type="button">
+              <picture srcset="img/#.webp" id="previous-slide">
+                <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
+              </picture>
+            </button>
+            <span class="currentslide _color -white"><span class="slidenumber">1</span> of 3</span> 
+            <button class="slide-container -right" type="button">
+              <div class="_flex -aligncenter" id="next-slide">
+                <span class="wavyline _flex"></span>
+                <span class="arrowright"></span>
+              </div>
+
+              <!-- 
                 <picture srcset="img/#.webp" id="next-slide">
                   <img class="icon" src="img/icons/arrow-right.png" alt="Arrow right for the product slider">
                 </picture>
-              </button>
-            </div>
+              -->
+            </button>
           </div>
         </div>
       </div>

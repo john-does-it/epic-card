@@ -1,13 +1,11 @@
 const productContainer = document.getElementById('product-container')
-const cardContainer = document.getElementById('card-container')
-const switchContainer = cardContainer.querySelector('[data-role="switch-container"]')
+const cardContainer = productContainer.querySelector('.card-container')
 const slides = cardContainer.querySelectorAll('[data-role="slide"]')
+const effectContainer = cardContainer.querySelector('.effect-container')
+const switchContainer = cardContainer.querySelector('[data-role="switch-container"]')
 const arrowsInswitchContainer = switchContainer.querySelectorAll('button')
-const effectContainer = productContainer.querySelector('.effect-container')
 const transitionContainer = effectContainer.querySelectorAll('.transition-container')
-const buyButton = document.getElementById('buy-button')
-
-console.log(slides)
+const slideNumber = cardContainer.querySelector('.slidenumber')
 
 arrowsInswitchContainer.forEach(arrow => {
   arrow.addEventListener('click', event => handleSlide(event))
@@ -16,8 +14,8 @@ arrowsInswitchContainer.forEach(arrow => {
 let index = 0
 
 function handleSlide (event) {
-  const parentElement = event.target.parentNode
-
+  const parentElement = event.target
+  
   if (parentElement.id === "next-slide") {
     index++
   }
@@ -26,27 +24,21 @@ function handleSlide (event) {
     index--
   }
 
-  if (index >= transitionContainer.length) {
+  if (index >= slides.length) {
     index = 0
   }
 
   if (index < 0) {
-    index = transitionContainer.length - 1
+    index = slides.length - 1
   }
 
-  for (let i = 0; i < transitionContainer.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     if (i === index) {
       transitionContainer[i].classList.add('-active')
+      slides[i].classList.add('-active')
     } else {
       transitionContainer[i].classList.remove('-active')
-    }
-  }
-
-  for (let i = 0; i < transitionContainer.length; i++) {
-    if (i === index) {
-      transitionContainer[i].classList.add('-active')
-    } else {
-      transitionContainer[i].classList.remove('-active')
+      slides[i].classList.remove('-active')
     }
   }
 
@@ -55,6 +47,8 @@ function handleSlide (event) {
     const backgroundColor = window.getComputedStyle(activeFillingColor).backgroundColor
     cardContainer.style.backgroundColor = backgroundColor
   }, 500)
+
+  slideNumber.innerText = `${index + 1}`
 }
 
 
