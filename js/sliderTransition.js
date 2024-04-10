@@ -8,19 +8,17 @@ const transitionContainer = effectContainer.querySelectorAll('.transition-contai
 const slideNumber = cardContainer.querySelector('.slidenumber')
 
 arrowsInswitchContainer.forEach(arrow => {
-  arrow.addEventListener('click', event => handleSlide(event))
+  arrow.addEventListener('click', event => handleSlide(arrow))
 })
 
 let index = 0
 
-function handleSlide (event) {
-  const parentElement = event.target
-  
-  if (parentElement.id === "next-slide") {
+function handleSlide (arrow) {
+  if (arrow.id === "next-slide") {
     index++
   }
 
-  if (parentElement.id === "previous-slide") {
+  if (arrow.id === "previous-slide") {
     index--
   }
 
