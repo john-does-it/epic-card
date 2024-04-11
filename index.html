@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>One EPIC card for EPIC job appliance</title>
+  <title>One EPIC actionnable card - Baltasar IKEA chair</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://db.onlinewebfonts.com/c/dafeb0d1d15beb00b5135cc45fa474ff?family=IKEA+Sans+Regular" rel="stylesheet">
   <link href="https://db.onlinewebfonts.com/c/095efbb8c368b11a6b71c268ef876ab0?family=IKEA+Sans+Heavy" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">  
 </head>
 <body class="layout-example">
   <section class="product-container _color -bgwhite" id="product-container">
@@ -39,26 +42,31 @@
         <div class="picturesandswitch-container _flex -column">
           <div class="pictures-container">
             <picture class="picture -active _padding -pb4" data-role="slide">
-              <img src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair">
+              <source srcset="img/products/baltasar-chair-white.webp">
+              <img src="img/products/baltasar-chair-white.png" alt="Picture of the white Baltasar chair" width="315" height="500">
             </picture>
             <picture class="picture _padding -pb4" data-role="slide">
-              <img src="img/products/baltasar-chair-yellow.png" alt="Picture of the white Baltasar chair">
+              <source srcset="img/products/baltasar-chair-yellow.webp">
+              <img src="img/products/baltasar-chair-yellow.png" alt="Picture of the white Baltasar chair" width="315" height="500">
             </picture>
             <picture class="picture _padding -pb4" data-role="slide">
-              <img src="img/products/baltsar-chair-black.png" alt="Picture of the black Baltasar chair">
+              <source srcset="img/products/baltasar-chair-black.webp">
+              <img src="img/products/baltasar-chair-black.png" alt="Picture of the black Baltasar chair" width="315" height="500">
             </picture>
           </div>
           <div class="switch-container _flex _padding -pb7" data-role="switch-container">
             <div class="number-container">
               <button class="slide-container -left" type="button" id="previous-slide" title="Switch to the previous slide">
                 <picture>
-                  <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider">
+                  <source srcset="img/icons/arrow-left.webp">
+                  <img class="icon" src="img/icons/arrow-left.png" alt="Arrow left for the product slider" width="42" height="8">
                 </picture>
               </button>
               <span class="currentslide _color -white"><span class="slidenumber">1</span> of 3</span> 
               <button class="slide-container -right" type="button" id="next-slide" title="Switch to the next slide">
                 <picture>
-                  <img class="icon" src="img/icons/arrow-right.png" alt="Arrow right for the product slider">
+                  <source srcset="img/icons/arrow-right.webp">
+                  <img class="icon" src="img/icons/arrow-right.png" alt="Arrow right for the product slider" width="42" height="8">
                 </picture>
               </button>
             </div>

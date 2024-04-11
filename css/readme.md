@@ -29,7 +29,7 @@ Documentation and examples
 https://lesscss.org
 
 ## File Structure and methodology
-The project respect the RSCSS methodoly: https://ricostacruz.com/rscss/index.html
+The RSCSS methodoly is used. More information about it right here: https://ricostacruz.com/rscss/index.html
 
 Projects are organized into the following categories:
 

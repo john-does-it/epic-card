@@ -152,7 +152,7 @@ template {
   box-sizing: border-box;
 }
 html {
-  font-family: "IKEA Sans Regular", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif !important;
+  font-family: "IKEA Sans Regular", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
 }
 body {
   margin: auto;
@@ -403,6 +403,10 @@ label {
 .card-container .slide-container {
   height: 40px;
 }
+/*
+@import "structures/footer.less";
+@import "structures/navbar.less";
+*/
 .layout-example .product-container {
   width: 100%;
 }
