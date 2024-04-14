@@ -303,9 +303,13 @@ label {
   background-color: hsl(0, 0%, 100%);
   max-width: 1280px;
   padding: 3.5rem 5%;
-  border-radius: 0.375rem;
-  border: 2px solid hsl(0, 0%, 31%);
   overflow: hidden;
+}
+@media (min-width: 640px) {
+  .card-container {
+    border-radius: 0.375rem;
+    border: 2px solid hsl(0, 0%, 31%);
+  }
 }
 .card-container *:not(.round) {
   z-index: 1;
@@ -382,7 +386,10 @@ label {
 }
 .card-container .priceandcta-container {
   max-width: 320px;
-  gap: 10%;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  row-gap: 1em;
   justify-content: space-between;
 }
 .card-container .picture {
@@ -1026,14 +1033,4 @@ label {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-._text.-antiqueolive {
-  font-family: 'Antique Olive Std Black', Helvetica Bold, Arial;
-  letter-spacing: -2px;
-}
-._text.-antiqueolive.-nospacing {
-  letter-spacing: 0;
-}
-._text.-helvetica {
-  font-family: 'Helvetica 55 Roman', Helvetica, sans-serif;
 }

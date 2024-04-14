@@ -3,10 +3,13 @@
   overflow: hidden;
   max-width: @xl;
   padding: @size-14 5%;
-  border-radius: @size-1-5;
-  border: 2px solid @black;
   overflow: hidden;
   
+  @media(min-width: @s) {
+    border-radius: @size-1-5;
+    border: 2px solid @black;
+  }
+
   *:not(.round) {
     z-index: 1;
   }
@@ -95,7 +98,8 @@
   
   .priceandcta-container {
     max-width: @xxs;
-    gap: 10%;
+    column-gap: 2em;
+    row-gap: 1em;
     justify-content: space-between;
   }
   
