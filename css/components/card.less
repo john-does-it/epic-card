@@ -9,7 +9,7 @@
     border-radius: @size-1-5;
     border: 2px solid @black;
   }
-
+  
   *:not(.round) {
     z-index: 1;
   }
@@ -35,7 +35,6 @@
       height: 1080px;
       right: -420px;
       top: -560px;
-      background-color: @blue;
       border-radius: 100%;
       z-index: 2;
       animation: slideIn 1s ease-in-out forwards;
@@ -46,30 +45,9 @@
       height: 100%;
       left: 0;
       bottom: 0;
-      background-color: @lightblue;
       z-index: 1;
       animation: fillingColor .5s linear forwards;
       border-radius: 0 100% 0 0;
-    }
-    
-    &.-two {
-      .round {
-        background-color: @white;
-      }
-      
-      .fillingcolor {
-        background-color: @blue;
-      }
-    }
-    
-    &.-three {
-      .round {
-        background-color: @blue;
-      }
-      
-      .fillingcolor {
-        background-color: @darkblue;
-      }
     }
   }
   
@@ -81,10 +59,10 @@
       flex-flow: row;
     }
   }
-
+  
   .content-subcontainer {
     max-width: @s;
-
+    
     @media (min-width: @m) {
       max-width: @xs;
     }
@@ -119,7 +97,7 @@
       justify-content: flex-start;
     }
   }
-
+  
   .slide-container {
     height: 40px;
   }

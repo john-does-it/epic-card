@@ -40,7 +40,6 @@ function handleSlide (arrow) {
     }
   }
 
-  /* once the transition is complete, we update the background color of the container with the color of the current filling color */
   setTimeout(() => {
     const activeFillingColor = transitionContainer[index].querySelector('.fillingcolor')
     const backgroundColor = window.getComputedStyle(activeFillingColor).backgroundColor
@@ -49,7 +48,6 @@ function handleSlide (arrow) {
 
   slideNumber.innerText = `${index + 1}`
 }
-
 
 
 
