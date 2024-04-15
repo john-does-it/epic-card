@@ -190,14 +190,6 @@ picture {
   max-width: 100%;
   height: auto;
 }
-picture {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
 address {
   font-style: normal;
   text-decoration: none;
@@ -283,9 +275,8 @@ label {
 .button {
   height: 42px;
   font-size: 14px;
-  font-family: "IKEA Sans Heavy";
+  font-family: "IKEA Sans Heavy", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
   background-color: hsl(52, 97%, 52%);
   color: hsl(0, 0%, 31%);
   border-radius: 1.75rem;
@@ -366,7 +357,7 @@ label {
   }
 }
 .card-container h2 {
-  font-family: "IKEA Sans Heavy";
+  font-family: "IKEA Sans Heavy", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
