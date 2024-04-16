@@ -152,7 +152,7 @@ template {
   box-sizing: border-box;
 }
 html {
-  font-family: "IKEA Sans Regular", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+  font-family: "IKEA Sans Regular", system-ui, sans-serif;
 }
 body {
   margin: auto;
@@ -357,7 +357,7 @@ label {
   }
 }
 .card-container h2 {
-  font-family: "IKEA Sans Heavy", "Noto Sans", "Roboto", "Open Sans", system-ui, sans-serif;
+  font-family: "IKEA Sans Heavy", system-ui, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
